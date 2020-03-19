@@ -52,3 +52,13 @@ To be continued, I will update as soon as I have time ...
 待续，我将在有时间时更新...
 
 
+## Usage: java -jar BeaconTool.jar
+```
+
+[*] parse the .cobaltstrike.beacon_keys to RSA private key and public key in pem format
+        BeaconTool -i .cobaltstrike.beacon_keys -rsa
+[*] compile geacon with the public key from .beacon_keys,which use default c2profile config for communication
+        BeaconTool -i .cobaltstrike.beacon_keys -compile geacon_sourcecode_folder
+
+```
+
