@@ -23,3 +23,32 @@
 
 To be continued, I will update as soon as I have time ...
 
+
+# 盖康
+
+
+**在Go中实施CobaltStrike的灯塔**
+
+----
+
+*该项目仅用于学习协议分析和逆向工程。如果有人的权利受到侵犯，请与我联系以删除该项目，最后一个请勿非法使用*
+
+
+
+## 怎么玩
+
+1. 设置团队服务器并启动http许可，团队服务器将生成文件.cobaltstrike.beacon_keys。
+2. 使用Jetbrains Idea编译beacontoo，使用命令java -jar BeaconTool.jar 将Java密钥库转换为PEM格式。
+3. 替换文件中的RSA密钥对cmd/config/config.go（不需要RSA私钥，我将其写在代码中只是为了记录）
+4. 为您要运行的平台编译geacon，请使用命令 export GOOS="darwin" && export GOARCH="amd64" && go build cmd/main.go
+5. 玩得开心 ！公关和问题，欢迎;）
+6. eacon刚刚在CobaltStrike 3.14上进行了测试，仅支持默认的c2profile，因此项目中的硬代码如此之多，我现在不尝试实现更多的C2profile支持。
+
+
+
+## 协议分析
+
+
+待续，我将在有时间时更新...
+
+
